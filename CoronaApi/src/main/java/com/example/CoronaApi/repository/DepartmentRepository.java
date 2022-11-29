@@ -2,8 +2,7 @@ package com.example.CoronaApi.repository;
 
 import com.example.CoronaApi.model.request.DepartmentRequest;
 import com.example.CoronaApi.model.response.Department;
-import com.example.CoronaApi.model.GeneralResponse;
-import com.example.CoronaApi.model.response.Patient;
+import com.example.CoronaApi.model.response.GeneralResponse;
 import com.example.CoronaApi.utils.ObjectConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -12,6 +11,9 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Department Repository used to retrieve,update and delete data
+ */
 @Component
 public class DepartmentRepository {
     private final static Map<String, Department> departmentMap = new HashMap<>();
@@ -19,13 +21,8 @@ public class DepartmentRepository {
 
     @Autowired
     private ObjectConverter objectConverter;
-    public Department getDepartmentById(String departmentId) {
-        try {
-            return departmentMap.get(departmentId);
-        } catch (Exception e) {
-            return null;
-        }
-
+    public Department getDepartmentById(String patientId) {
+        return departmentMap.get(patientId);
     }
 
     public Collection<Department> getAllDepartment() {

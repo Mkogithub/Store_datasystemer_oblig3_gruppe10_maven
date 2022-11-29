@@ -4,23 +4,20 @@ import org.springframework.hateoas.RepresentationModel;
 
 public class Patient extends RepresentationModel<Patient> {
 
-    public Patient(String patientId, String created, String patientName, String modified, String symptoms, String description, String departmentId) {
-        this.patientId = patientId;
-        this.created = created;
-        this.patientName = patientName;
-        this.modified = modified;
-        this.symptoms = symptoms;
-        this.description = description;
-        this.departmentId = departmentId;
-    }
-
     private String patientId;
+    private String doctorId;
     private String created;
     private String patientName;
     private String modified;
-    private String symptoms;
     private String description;
-    private String departmentId;
+
+    public String getDoctorId() {
+        return doctorId;
+    }
+
+    public void setDoctorId(String doctorId) {
+        this.doctorId = doctorId;
+    }
 
     public String getPatientId() {
         return patientId;
@@ -54,27 +51,11 @@ public class Patient extends RepresentationModel<Patient> {
         this.modified = modified;
     }
 
-    public String getSymptoms() {
-        return symptoms;
-    }
-
-    public void setSymptoms(String symptoms) {
-        this.symptoms = symptoms;
-    }
-
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getDepartmentId() {
-        return departmentId;
-    }
-
-    public void setDepartmentId(String departmentId) {
-        this.departmentId = departmentId;
     }
 }

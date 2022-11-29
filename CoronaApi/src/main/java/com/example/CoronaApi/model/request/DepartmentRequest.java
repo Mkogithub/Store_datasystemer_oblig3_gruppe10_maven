@@ -1,5 +1,8 @@
 package com.example.CoronaApi.model.request;
 
+/**
+ * Department Request data model
+ */
 public class DepartmentRequest {
     private String departmentId;
     private String departmentName;

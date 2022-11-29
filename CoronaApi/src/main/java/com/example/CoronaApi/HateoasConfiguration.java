@@ -12,6 +12,9 @@ import org.springframework.plugin.core.SimplePluginRegistry;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Help to load hateoas and swagger
+ */
 @Configuration
 public class HateoasConfiguration {
 

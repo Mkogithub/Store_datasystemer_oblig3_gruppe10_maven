@@ -5,6 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/**
+ * Object Converter help to convert JSON object to string and String to JSON object
+ */
 @Component
 public class ObjectConverter {
 

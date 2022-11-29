@@ -4,18 +4,18 @@ package com.example.CoronaApi.model.response;
 import org.springframework.hateoas.RepresentationModel;
 
 public class CovidSymptoms extends RepresentationModel<CovidSymptoms> {
-    private String id;
+    private String symptomId;
     private String patientId;
     private String visitingDate;
     private Boolean coughing;
     private Boolean fever;
 
-    public String getId() {
-        return id;
+    public String getSymptomId() {
+        return symptomId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setSymptomId(String symptomId) {
+        this.symptomId = symptomId;
     }
 
     public String getPatientId() {

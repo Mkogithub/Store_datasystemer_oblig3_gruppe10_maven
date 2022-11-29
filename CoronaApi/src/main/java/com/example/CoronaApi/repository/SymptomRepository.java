@@ -1,6 +1,6 @@
 package com.example.CoronaApi.repository;
 
-import com.example.CoronaApi.model.GeneralResponse;
+import com.example.CoronaApi.model.response.GeneralResponse;
 import com.example.CoronaApi.model.request.CovidSymptomsRequest;
 import com.example.CoronaApi.model.response.CovidSymptoms;
 import com.example.CoronaApi.utils.ObjectConverter;
@@ -11,6 +11,10 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/**
+ * Symptom Repository used to retrieve,update and delete data
+ */
 @Component
 public class SymptomRepository {
 
@@ -32,8 +36,7 @@ public class SymptomRepository {
         GeneralResponse generalResponse = new GeneralResponse();
         try {
             covidSymptomsId++;
-            patientSymptoms.setId("s" + covidSymptomsId);
-            patientSymptoms.setCoughing(patientSymptoms.getCoughing());
+            patientSymptoms.setSymptomId("s" + covidSymptomsId);
             covidSymptomsMap.put(patientSymptoms.getPatientId(), objectConverter.from(objectConverter.toJson(patientSymptoms), CovidSymptoms.class));
             generalResponse.setId("s" + covidSymptomsId);
             generalResponse.setResult("Success");

@@ -1,8 +1,9 @@
-package com.example.CoronaApi.model.response;
+package com.example.CoronaApi.model.request;
 
-import org.springframework.hateoas.RepresentationModel;
-
-public class Doctor extends RepresentationModel<Doctor> {
+/**
+ * Doctor Request data model
+ */
+public class DoctorRequest {
 
     private String doctorId;
     private String departmentId;
