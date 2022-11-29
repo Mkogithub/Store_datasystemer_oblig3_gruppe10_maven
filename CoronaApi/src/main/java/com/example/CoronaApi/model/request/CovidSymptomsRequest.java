@@ -8,6 +8,14 @@ public class CovidSymptomsRequest {
     private Boolean coughing;
     private Boolean fever;
 
+    public CovidSymptomsRequest(String id, String patientId, String visitingDate, Boolean coughing, boolean fever) {
+        this.id = id;
+        this.patientId = patientId;
+        this.visitingDate = visitingDate;
+        this.coughing = coughing;
+        this.fever = fever;
+    }
+
     public String getId() {
         return id;
     }

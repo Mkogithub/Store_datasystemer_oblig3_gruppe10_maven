@@ -6,6 +6,12 @@ public class DoctorRequst {
     private String departmentId;
     private String doctorName;
 
+    public DoctorRequst(String doctorId, String departmentId, String doctorName) {
+        this.doctorId = doctorId;
+        this.departmentId = departmentId;
+        this.doctorName =doctorName;
+    }
+
     public String getDoctorId() {
         return doctorId;
     }
