@@ -5,8 +5,8 @@ Repository for Oblig 3 in the Uit Course Store datasystemer
 docker run -d -p 8080:8080 --name coronaapi mko095/coronaapi:latest
 after this is run api will be available at: http://localhost:8080/api/department/
 
-### This must be run before the app is run to ensure proper function
-the app can be found at https://github.com/Mkogithub/Oblig3_app
+### This must be run before the app is run to ensure proper function:
+    #### Base Url in java/com/example/oblig3_0_3/util/Constants.kt must be changed to the host computers ipv4 address :8080/api/ so the client can connect to the api
 
 
 
