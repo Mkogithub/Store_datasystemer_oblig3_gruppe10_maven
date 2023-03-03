@@ -1,6 +1,8 @@
 # Store_datasystemer_oblig3_gruppe10_maven
 Repository for Oblig 3 in the Uit Course Store datasystemer
 
+Now also home to the updated app, which is found under zippedapp/oblig4
+
 ### To run the application via docker, use command:
 docker run -d -p 8080:8080 --name coronaapi mko095/coronaapi:latest
 after this is run api will be available at: http://localhost:8080/api/department/
